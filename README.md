@@ -1,16 +1,14 @@
 # Snapgraam
 
-![logo](https://github.com/KhanArish16/FRIENDIFY_App/blob/main/public/assets/images/log)
+<img src='./public/assets/images/logo.svg' alt='img'>
 
 ### Introducing Snapgraam ✌️
-
-<img src='./public/assets/images/snapgram.png'>
 
 Its a modern social like web app with a stunning UI with a native mobile feel, a special tech stack, an infinite scroll feature, and amazing performance using React JS, Appwrite, TypeScript, and more.
 
 ## 🚀 Demo
 
-![poster_snapgraam_arsih](https://github.com/KhanArish16/FRIENDIFY_App/blob/main/public/assets/images/snapgram.png)
+<img src='./public/assets/images/snapgram.png' alt='img'>
 
 Try the App: [Snapgraam](https://natours-project-one.vercel.app/)
 
