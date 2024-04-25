@@ -72,18 +72,35 @@ export const useSignOutAccount = () => {
 //   });
 // };
 
+// export const useGetPosts = () => {
+//   return useInfiniteQuery({
+//     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
+//     queryFn: getInfinitePosts,
+//     getNextPageParam: (lastPage) => {
+//       if (lastPage && lastPage.documents.length === 0) {
+//         return null;
+//       }
+
+//       const lastId = lastPage.documents[lastPage?.documents.length - 1].$id;
+//       return lastId;
+//     },
+//   });
+// };
 export const useGetPosts = () => {
   return useInfiniteQuery({
     queryKey: [QUERY_KEYS.GET_INFINITE_POSTS],
-    queryFn: getInfinitePosts,
+    queryFn: ({ pageParam }) => getInfinitePosts({ pageParam }),
     getNextPageParam: (lastPage) => {
-      if (lastPage && lastPage.documents.length === 0) {
+      if (!lastPage || lastPage.documents.length === 0) {
         return null;
       }
 
-      const lastId = lastPage.documents[lastPage?.documents.length - 1].$id;
-      return lastId;
+      const lastId = lastPage.documents[lastPage.documents.length - 1].$id;
+      // Convert lastId to a number before returning
+      return lastId ? Number(lastId) : null;
     },
+    // Add initialPageParam property here
+    initialPageParam: 0, // or any other initial value as per your requirement
   });
 };
 
