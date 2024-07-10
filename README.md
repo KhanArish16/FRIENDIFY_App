@@ -1,6 +1,6 @@
 # Friendify
 
-<img src='./public/assets/images/logo.svg' alt='img'>
+<img src='./public/assets/images/FriendifyLogo.png' alt='img'>
 
 ### Introducing Friendify ✌️
 
