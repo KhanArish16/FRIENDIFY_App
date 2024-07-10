@@ -1,16 +1,12 @@
-# Snapgraam
+# Friendify
 
 <img src='./public/assets/images/logo.svg' alt='img'>
 
-### Introducing Snapgraam ✌️
+### Introducing Friendify ✌️
 
 Its a modern social like web app with a stunning UI with a native mobile feel, a special tech stack, an infinite scroll feature, and amazing performance using React JS, Appwrite, TypeScript, and more.
 
 ## 🚀 Demo
-
-<img src='./public/assets/images/snapgram.png' alt='img'>
-
-Try the App: [Snapgraam](https://natours-project-one.vercel.app/)
 
 ## 🧐 Features
 
